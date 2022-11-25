@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.hr{
+    margin-top: 9%;
+}
+.leftimg{
+    width: 13%;
+    height:23%;
+    margin-left:3%;
+    margin-top:1%;
+    position: absolute;
+}
+.rightimg{
+    width: 13%;
+    height: 23%;
+    margin-left:84%;
+    margin-top:1%;
+    position:absolute;
+}
+.centerimg{
+    width: 17%;
+    height: 9%;
+    margin-left:42%;
+    margin-top:16%;
+    position: absolute;
+    
+}
+
+.heading{
+margin:0%;
+text-align: center;
+text-decoration:solid;
+font-family:'Pacifico', cursive,italic,bold;
+font-size: 260%;
+color:rgb(239, 239, 239);
+background: #093028;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-radius: 2px;
+border-color: black;
+border-style: solid;
+border-width:thick;
+letter-spacing:1px;
+word-spacing:2pxpx;
+padding:1%;
+}
+.body{
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    margin:0%;
+    
+}
+
+.playlist{
+    margin-top: 6%;
+    font-size: 200%;
+    font-family: 'Courier New', Courier, monospace bold;
+}
+
+.container{
+    background:#222;
+}
+.container .heading1{
+    font-size:1.9rem;
+    padding:.5rem 0;
+    text-align:center;
+    text-shadow: 0 .5rem #000;
+    color: #fff;
+}
+.music-container{
+    display:flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.container .music-container .box{
+    height: 16rem;
+    width: 80%;
+    display:flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow:0 .5rem 1rem #000;
+    overflow: hidden;
+    margin: 2rem;
+}
+.container .music-container .box .image{
+    height: 16rem;
+    width: 25%;
+}
+.container .music-container .box .image img{
+    height: 100%;
+    
+    object-fit: cover;
+}
+.container .music-container .box .music{
+    width: 75%;
+}
+.container .music-container .box .music audio{
+    width: 90%;
+    outline: none;
+    margin-left:10% ;
+}
+.container .music-container .box .music audio::-webkit-media-controls-eclosure{
+    background: none;
+}
+/*Audio elements have the following pseudo-element selectors in CSS:*/
+audio::-webkit-media-controls-panel {
+    background-color: #424242;
+  }
+  audio::-webkit-media-controls-mute-button {
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  audio::-webkit-media-controls-play-button {
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  audio::-webkit-media-controls-play-button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+  }
+  audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+  }
+  audio::-webkit-media-controls-timeline {
+    background-color: #fff;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  audio::-webkit-media-controls-volume-slider {
+    background-color: #fff;
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+ 
+  audio{
+    height:100px;
+    //filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+  }
+  audio::-webkit-media-controls-toggle-closed-captions-button{
+    background-color: #fff;
+  }
+  .image1 img{
+    margin-top: 14%;
+    height: 330px;
+    width: 341px;
+    object-fit:cover;
+  }
+ 
+  .music1{
+    width: 100%;
+}
+.music1 audio{
+    width: 98.6%;
+    outline: none;
+    margin-left:1.2% ;
+}
+ .music1 audio::-webkit-media-controls-eclosure{
+    background: none;
+}
+/*Making it responsive*/
+@media(max-width:600px){
+  .hr{
+    margin-top: 15%;
+}  
+  .leftimg{
+        width: 18%;
+        height: 9%;
+        margin-left:3%;
+        margin-right:5%;
+        margin-top:9%;
+        position:absolute;
+    }
+    .rightimg{
+        width: 18%;
+        height:9%;
+        margin-left:79%;
+        margin-top:9%;
+        position:absolute;
+    }
+    .centerimg{
+        width:39%;
+        height: 5%;
+        margin-left:31%;
+        margin-top:40%;
+        position: absolute;
+        
+    }
+    
+    .heading{
+    margin:0%;
+    text-align: center;
+    text-decoration:solid;
+    font-family:'Pacifico', cursive,italic,bold;
+    font-size: 200%;
+    color:rgb(239, 239, 239);
+    background: #093028;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 2px;
+    border-color: black;
+    border-style: solid;
+    border-width:thick;
+    letter-spacing:1px;
+    word-spacing:2pxpx;
+    padding:1%;
+    }
+    .playlist{
+      margin-top: 6%;
+      font-size: 100%;
+      font-family: 'Courier New', Courier, monospace bold;
+  }
+  .container .heading1{
+    font-size:1.9 rem;
+    padding:.5rem 0;
+    text-align:center;
+    text-shadow: 0 .2rem #000;
+    color: #fff;
+}
+
+.container .music-container .box{
+  height: 17rem;
+  width: 95%;
+flex-flow: column;
+
+}
+.container .music-container .box .image{
+  height: 80%;
+  width: 100%;
+}
+.container .music-container .box .music{
+  height:110%;
+  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 5%;
+}
+.container .music-container .box .music audio{
+  margin-top: 0%;
+  margin: 0%;
+  height: 100%;
+  width: 90%;
+  border-color: #000;
+  border-radius: 39%;
+  border-width: 3px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+.container .music-container .box .image img{
+  height: 80%;
+  width: 100%;
+ 
+}
+.container .music-container .box .image1{
+  height: 80%;
+  width: 100%;
+}
+.container .music-container .box .music1{
+  height:110%;
+  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 5%;
+}
+.container .music-container .box .music1 audio{
+  margin-top: 0%;
+  margin: 0%;
+  height: 100%;
+  width: 90%;
+  border-color: #000;
+  border-radius: 39%;
+  border-width: 3px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+.container .music-container .box .image1 img{
+  height: 200%;
+  width: 100%;
+  margin-top:0%;
+ 
+}
+
