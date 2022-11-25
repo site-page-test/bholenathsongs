@@ -168,6 +168,17 @@ audio::-webkit-media-controls-panel {
     width: 340px;
     object-fit:cover;
   }
+ .music1{
+    width: 80%;
+}
+.music1 audio{
+    width: 90%;
+    outline: none;
+    margin-left:1.2% ;
+}
+ .music1 audio::-webkit-media-controls-eclosure{
+    background: none;
+}
 /*Making it responsive*/
 @media(max-width:600px){
     .leftimg{
